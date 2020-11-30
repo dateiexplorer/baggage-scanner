@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestClass" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-11-30T21:51:42" hostname="devman" time="0.099">
+  <properties/>
+  <testcase name="testEmployeesAtBaggageScanner()" classname="TestClass" time="0.064"/>
+  <testcase name="testLockIDCardAfterThreeFailedAttempts()" classname="TestClass" time="0.01"/>
+  <testcase name="testSupervisorUnlockBaggageScanner()" classname="TestClass" time="0.005"/>
+  <testcase name="testBaggageFunctionsByProfileType()" classname="TestClass" time="0.011"/>
+  <testcase name="testProfileTypeKOrONotAccepted()" classname="TestClass" time="0.004"/>
+  <system-out><![CDATA[Verification failed.
+Verification failed.
+Verification failed.
+There is no tray to scan. Aborted.
+Your IDCard is not accepted.
+Your IDCard is not accepted.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

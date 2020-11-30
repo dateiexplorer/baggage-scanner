@@ -8,7 +8,7 @@ import java.time.temporal.TemporalAmount;
 
 public class Configuration {
 
-    public static final String DIRECTORY_PATH = "";
+    public static final String DIRECTORY_PATH = "src/main/resources/";
 
     public static final TemporalAmount TIME_UNTIL_ID_CARD_IS_INVALID = Period.ofMonths(6);
 
