@@ -12,7 +12,7 @@ public class Utils {
         return LocalDateTime.now();
     }
 
-    public static void removeItemFromHandBaggageAtPosition(ProhibitedItem item, HandBaggage handBaggage, Position position) {
+    public static ProhibitedItem removeItemFromHandBaggageAtPosition(ProhibitedItem item, HandBaggage handBaggage, Position position) {
         String layer = handBaggage.getLayers()[position.getLayerIndex()];
         int index = position.getCharIndex();
         String contentBeforeItem = layer.substring(0, index);
@@ -20,5 +20,6 @@ public class Utils {
 
         layer = contentBeforeItem + contentAfterItem;
         handBaggage.getLayers()[position.getLayerIndex()] = layer;
+        return item;
     }
 }

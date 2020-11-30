@@ -14,13 +14,13 @@ public class OperatingStationInspector extends Inspector {
         super(id, name, birthDate, isSenior, idCardPin);
     }
 
-    public void swipeIDCardThroughReader(String pin) {
+    public boolean swipeIDCardThroughReader(String pin) {
         if (operatingStation == null) {
             System.out.println("Inspector " + name +  " is not at work!");
-            return;
+            return false;
         }
 
-        operatingStation.getReader().verify(idCard, pin);
+        return operatingStation.getReader().verify(idCard, pin);
     }
 
     public void pushButton(Button button) {
@@ -34,17 +34,17 @@ public class OperatingStationInspector extends Inspector {
 
     public void onProhibitedItemFound(Record record) {
         switch (record.getResult().getType()) {
-            case DETECTED_KNIFE -> tellInspectorAtPostControl(record);
-            case DETECTED_WEAPON, DETECTED_EXPLOSIVE -> alarm();
+            case DETECTED_KNIFE -> report(record);
+            case DETECTED_WEAPON, DETECTED_EXPLOSIVE -> alarm(record);
         }
     }
 
-    private void tellInspectorAtPostControl(Record record) {
-        operatingStation.getBaggageScanner().getManualPostControl().onProhibitedItemDetected(record);
+    private void report(Record record) {
+        operatingStation.getBaggageScanner().report(this, record);
     }
 
-    private void alarm() {
-        operatingStation.getBaggageScanner().alarm(this);
+    private void alarm(Record record) {
+        operatingStation.getBaggageScanner().alarm(this, record);
     }
 
     // Getter and setter

@@ -1,7 +1,6 @@
 package dhbw.scanner.authentication;
 
 import dhbw.scanner.Configuration;
-import dhbw.scanner.utils.AuthUtils;
 import dhbw.scanner.utils.Utils;
 
 import java.time.LocalDateTime;

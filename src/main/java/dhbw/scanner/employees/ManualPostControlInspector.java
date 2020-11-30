@@ -17,12 +17,12 @@ public class ManualPostControlInspector extends Inspector {
         super(id, name, birthDate, isSenior, idCardPin);
     }
 
-    public void removeKnifeFromHandBaggage(HandBaggage handBaggage, Record record) {
+    public ProhibitedItem removeKnifeFromHandBaggage(HandBaggage handBaggage, Record record) {
         if (manualPostControl == null) {
             System.out.println("Inspector " + name +  " is not at work!");
         }
 
-        Utils.removeItemFromHandBaggageAtPosition(ProhibitedItem.KNIFE, handBaggage, record.getResult().getPosition());
+        return Utils.removeItemFromHandBaggageAtPosition(ProhibitedItem.KNIFE, handBaggage, record.getResult().getPosition());
     }
 
     // Getter and setter

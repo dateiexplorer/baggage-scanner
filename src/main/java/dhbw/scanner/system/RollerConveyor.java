@@ -26,12 +26,16 @@ public class RollerConveyor {
     }
 
     public Tray getNextTray() {
-        if (queue.isEmpty()) {
+        if (isEmpty()) {
             System.out.println("The roller conveyor is empty.");
             return null;
         }
 
         return queue.removeFirst();
+    }
+
+    public boolean isEmpty() {
+        return queue.isEmpty();
     }
 
     public BaggageScanner getBaggageScanner() {

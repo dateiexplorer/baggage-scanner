@@ -2,7 +2,8 @@ package dhbw.scanner.system;
 
 import dhbw.scanner.Configuration;
 import dhbw.scanner.authentication.ProfileType;
-import dhbw.scanner.employees.Employee;
+import dhbw.scanner.employees.*;
+import dhbw.scanner.police.FederalPoliceOffice;
 import dhbw.scanner.records.Record;
 import dhbw.scanner.records.RecordResultType;
 import dhbw.scanner.utils.AuthUtils;
@@ -21,7 +22,36 @@ public class BaggageScanner {
 
     private State state;
 
-    public BaggageScanner(Configuration configuration) {
+    private RollerConveyorInspector rollerConveyorInspector;
+    private OperatingStationInspector operatingStationInspector;
+    private ManualPostControlInspector manualPostControlInspector;
+    private Supervisor supervisor;
+    private FederalPoliceOfficer federalPoliceOfficer;
+
+    public BaggageScanner(RollerConveyorInspector rollerConveyorInspector,
+                          OperatingStationInspector operatingStationInspector,
+                          ManualPostControlInspector manualPostControlInspector,
+                          Supervisor supervisor,
+                          FederalPoliceOfficer federalPoliceOfficer,
+                          FederalPoliceOffice federalPoliceOffice) {
+        this.rollerConveyorInspector = rollerConveyorInspector;
+        this.operatingStationInspector = operatingStationInspector;
+        this.manualPostControlInspector = manualPostControlInspector;
+        this.supervisor = supervisor;
+        this.federalPoliceOfficer = federalPoliceOfficer;
+
+        this.provisionOfTrays = new ProvisionOfTrays(this, Configuration.MAX_NUMBER_OF_TRAYS);
+        this.rollerConveyor = new RollerConveyor(this, rollerConveyorInspector);
+        this.belt = new Belt(this);
+        this.scanner = new Scanner(this);
+        this.operatingStation = new OperatingStation(this, operatingStationInspector);
+        this.manualPostControl = new ManualPostControl(this, manualPostControlInspector);
+        this.supervision = new Supervision(this, supervisor);
+        this.track01 = new Belt(this);
+        this.track02 = new Belt(this);
+
+        // Set initial state
+        this.state = State.SHUTDOWN;
     }
 
     public boolean start(Employee employee) {
@@ -71,23 +101,22 @@ public class BaggageScanner {
         }
 
         if (record.getResult().getType() != RecordResultType.CLEAN) {
-            // employee.onProhibitedItemFound(record);
+            ((OperatingStationInspector) employee).onProhibitedItemFound(record);
         }
 
         return true;
     }
 
-    public boolean alarm(Employee employee) {
+    public boolean alarm(Employee employee, Record record) {
         if (!AuthUtils.checkAuthorization(employee.getIDCard(), ProfileType.I)) {
             return false;
         }
 
         state = State.LOCKED;
         return true;
-
     }
 
-    public boolean report(Employee employee) {
+    public boolean report(Employee employee, Record record) {
         if (!AuthUtils.checkAuthorization(employee.getIDCard(), ProfileType.S)) {
             return false;
         }
@@ -152,6 +181,26 @@ public class BaggageScanner {
 
     public Belt getTrack02() {
         return track02;
+    }
+
+    public RollerConveyorInspector getRollerConveyorInspector() {
+        return rollerConveyorInspector;
+    }
+
+    public OperatingStationInspector getOperatingStationInspector() {
+        return operatingStationInspector;
+    }
+
+    public ManualPostControlInspector getManualPostControlInspector() {
+        return manualPostControlInspector;
+    }
+
+    public Supervisor getSupervisor() {
+        return supervisor;
+    }
+
+    public FederalPoliceOfficer getFederalPoliceOfficer() {
+        return federalPoliceOfficer;
     }
 
     public void setState(State state) {

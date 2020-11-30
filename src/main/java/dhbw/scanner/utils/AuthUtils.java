@@ -14,7 +14,4 @@ public class AuthUtils {
                 !idCard.isLocked() &&
                 Arrays.asList(profileTypes).contains(idCard.getMagnetStripe().getProfileType(Configuration.SECRET_KEY));
     }
-
-
-
 }

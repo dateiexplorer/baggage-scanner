@@ -7,14 +7,14 @@ public class Robot {
 
     private FederalPoliceOfficer owner;
 
-    public void destroy(HandBaggage handBaggage) {
+    public String[] destroy(HandBaggage handBaggage) {
         String content = handBaggage.getContent();
         String[] destroyedHandBaggage = new String[1000];
         for (int i = 0; i < destroyedHandBaggage.length - 1; i++) {
             destroyedHandBaggage[0] = content.substring(i * 50, (i + 1) * 50);
         }
 
-        handBaggage.setLayers(handBaggage.getLayers());
+        return destroyedHandBaggage;
     }
 
     // Getter and setter

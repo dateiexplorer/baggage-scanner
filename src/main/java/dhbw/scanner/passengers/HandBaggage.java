@@ -1,14 +1,20 @@
 package dhbw.scanner.passengers;
 
+import dhbw.scanner.Configuration;
+import dhbw.scanner.utils.FileUtils;
+
 public class HandBaggage {
 
     private int id;
     private String[] layers;
 
-    public HandBaggage(int id) {
+    private Passenger owner;
+
+    public HandBaggage(int id, Passenger owner) {
+        this.owner = owner;
         layers = new String[5];
 
-        // TODO: Read file into layers
+        layers = FileUtils.loadFileAsBaggageLayers(Configuration.DIRECTORY_PATH + id + ".txt");
     }
 
     public String getContent() {
@@ -23,6 +29,10 @@ public class HandBaggage {
     // Getter and setter
     public int getID() {
         return id;
+    }
+
+    public Passenger getOwner() {
+        return owner;
     }
 
     public void setLayers(String[] layers) {

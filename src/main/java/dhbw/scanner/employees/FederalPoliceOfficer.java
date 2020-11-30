@@ -17,6 +17,7 @@ public class FederalPoliceOfficer extends Employee {
 
     private String grade;
     private FederalPoliceOffice office;
+    private ProhibitedItem prohibitedItem;
 
     private boolean onDuty;
 
@@ -31,8 +32,8 @@ public class FederalPoliceOfficer extends Employee {
         passenger.setArrested(true);
     }
 
-    public void removeWeaponFromBaggage(HandBaggage handBaggage, Record record) {
-        Utils.removeItemFromHandBaggageAtPosition(ProhibitedItem.WEAPON, handBaggage, record.getResult().getPosition());
+    public ProhibitedItem removeWeaponFromBaggage(HandBaggage handBaggage, Record record) {
+        return Utils.removeItemFromHandBaggageAtPosition(ProhibitedItem.WEAPON, handBaggage, record.getResult().getPosition());
     }
 
     // Getter and setter
@@ -54,5 +55,13 @@ public class FederalPoliceOfficer extends Employee {
 
     public FederalPoliceOffice getFederalPoliceOffice() {
         return office;
+    }
+
+    public void setProhibitedItem(ProhibitedItem prohibitedItem) {
+        this.prohibitedItem = prohibitedItem;
+    }
+
+    public ProhibitedItem getProhibitedItem() {
+        return prohibitedItem;
     }
 }
