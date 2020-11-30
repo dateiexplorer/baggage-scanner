@@ -1,7 +1,6 @@
 package dhbw.scanner;
 
 import dhbw.scanner.employees.*;
-import dhbw.scanner.passengers.HandBaggage;
 import dhbw.scanner.passengers.Passenger;
 import dhbw.scanner.police.FederalPoliceOffice;
 import dhbw.scanner.police.Robot;
@@ -22,6 +21,7 @@ public class Simulation {
     private FederalPoliceOfficer o3;
 
     private Technician technician;
+    private HouseKeeping houseKeeping;
 
     private BaggageScanner b;
     private FederalPoliceOffice office;
@@ -44,6 +44,9 @@ public class Simulation {
 
         technician = new Technician(employeeID++, "Jason Statham",
                 LocalDate.of(1967, 7, 26), Configuration.INITIAL_PW);
+
+        houseKeeping = new HouseKeeping(employeeID++, "Jason Clarke",
+            LocalDate.of(1969, 7, 17), Configuration.INITIAL_PW);
 
         testStripe = FileUtils.readFileAsString(Configuration.DIRECTORY_PATH + "testStripe.txt");
 
@@ -139,4 +142,20 @@ public class Simulation {
         }
     }
 
+    // Getter and setter
+    public Technician getTechnician() {
+        return technician;
+    }
+
+    public HouseKeeping getHouseKeeping() {
+        return houseKeeping;
+    }
+
+    public BaggageScanner getBaggageScanner() {
+        return b;
+    }
+
+    public FederalPoliceOffice getOffice() {
+        return office;
+    }
 }

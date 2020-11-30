@@ -106,7 +106,7 @@ public class BaggageScanner {
         return true;
     }
 
-    public boolean alarm(Employee employee, Record record) {
+    public boolean alarm(Employee employee) {
         if (!AuthUtils.checkAuthorization(employee.getIDCard(), ProfileType.I)) {
             return false;
         }
@@ -115,7 +115,7 @@ public class BaggageScanner {
         return true;
     }
 
-    public boolean report(Employee employee, Record record) {
+    public boolean report(Employee employee) {
         if (!AuthUtils.checkAuthorization(employee.getIDCard(), ProfileType.S)) {
             return false;
         }

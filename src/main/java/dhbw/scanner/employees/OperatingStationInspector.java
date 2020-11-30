@@ -34,17 +34,17 @@ public class OperatingStationInspector extends Inspector {
 
     public void onProhibitedItemFound(Record record) {
         switch (record.getResult().getType()) {
-            case DETECTED_KNIFE -> report(record);
-            case DETECTED_WEAPON, DETECTED_EXPLOSIVE -> alarm(record);
+            case DETECTED_KNIFE -> report();
+            case DETECTED_WEAPON, DETECTED_EXPLOSIVE -> alarm();
         }
     }
 
-    private void report(Record record) {
-        operatingStation.getBaggageScanner().report(this, record);
+    private void report() {
+        operatingStation.getBaggageScanner().report(this);
     }
 
-    private void alarm(Record record) {
-        operatingStation.getBaggageScanner().alarm(this, record);
+    private void alarm() {
+        operatingStation.getBaggageScanner().alarm(this);
     }
 
     // Getter and setter
