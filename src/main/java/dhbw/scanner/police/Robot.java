@@ -14,6 +14,7 @@ public class Robot {
             destroyedHandBaggage[0] = content.substring(i * 50, (i + 1) * 50);
         }
 
+        handBaggage.setLayers(destroyedHandBaggage);
         return destroyedHandBaggage;
     }
 

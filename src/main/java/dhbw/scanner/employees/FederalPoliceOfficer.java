@@ -21,7 +21,8 @@ public class FederalPoliceOfficer extends Employee {
 
     private boolean onDuty;
 
-    public FederalPoliceOfficer(int id, String name, LocalDate birthDate, String grade, FederalPoliceOffice office, String idCardPin) {
+    public FederalPoliceOfficer(int id, String name, LocalDate birthDate, String grade, FederalPoliceOffice office,
+                                String idCardPin) {
         super(id, name, birthDate, IDCardBuilder.buildIDCard(IDCardType.EXTERNAL, ProfileType.O, idCardPin));
         this.grade = grade;
 

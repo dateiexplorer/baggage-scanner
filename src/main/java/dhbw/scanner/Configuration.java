@@ -16,6 +16,8 @@ public class Configuration {
 
     public static final String SECRET_KEY = "BaggageScanner$20^20";
 
+    public static final String INITIAL_PW = "1234";
+
     public static final int MAX_NUMBER_OF_TRAYS = 100;
 
     public static final IStringMatching SEARCH_ALGORITHM = new BoyerMoore();

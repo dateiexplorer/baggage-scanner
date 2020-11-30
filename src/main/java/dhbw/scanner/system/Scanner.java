@@ -48,7 +48,7 @@ public class Scanner {
         // Create a record.
         Record record = new Record(trayToScan.getHandBaggage().getID(), getCurrentTimestamp(),
                 new RecordResult(recordResultType, new Position(layerIndex, charIndex)));
-        // TODO: Store record in file.
+        Record.getRecords().add(record);
 
         baggageScanner.setState(State.ACTIVATED);
 

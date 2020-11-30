@@ -32,8 +32,7 @@ public class BaggageScanner {
                           OperatingStationInspector operatingStationInspector,
                           ManualPostControlInspector manualPostControlInspector,
                           Supervisor supervisor,
-                          FederalPoliceOfficer federalPoliceOfficer,
-                          FederalPoliceOffice federalPoliceOffice) {
+                          FederalPoliceOfficer federalPoliceOfficer) {
         this.rollerConveyorInspector = rollerConveyorInspector;
         this.operatingStationInspector = operatingStationInspector;
         this.manualPostControlInspector = manualPostControlInspector;
