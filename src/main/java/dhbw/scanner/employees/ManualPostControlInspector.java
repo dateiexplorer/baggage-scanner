@@ -4,6 +4,7 @@ package dhbw.scanner.employees;
 import dhbw.scanner.ProhibitedItem;
 import dhbw.scanner.passengers.HandBaggage;
 import dhbw.scanner.records.Record;
+import dhbw.scanner.system.ExplosiveTraceDetector;
 import dhbw.scanner.system.ManualPostControl;
 import dhbw.scanner.utils.Utils;
 
@@ -15,6 +16,7 @@ public class ManualPostControlInspector extends Inspector {
 
     public ManualPostControlInspector(int id, String name, LocalDate birthDate, boolean isSenior, String idCardPin) {
         super(id, name, birthDate, isSenior, idCardPin);
+
     }
 
     public ProhibitedItem removeKnifeFromHandBaggage(HandBaggage handBaggage, Record record) {
@@ -23,6 +25,14 @@ public class ManualPostControlInspector extends Inspector {
         }
 
         return Utils.removeItemFromHandBaggageAtPosition(ProhibitedItem.KNIFE, handBaggage, record.getResult().getPosition());
+    }
+
+    public boolean swipeAndDetectedExplosive(String testStripe) {
+        if (manualPostControl == null) {
+            System.out.println("Inspector " + name +  " is not at work!");
+        }
+
+        return manualPostControl.getExplosiveTraceDetector().read(testStripe);
     }
 
     // Getter and setter

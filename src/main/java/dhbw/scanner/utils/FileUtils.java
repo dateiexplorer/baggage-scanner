@@ -26,4 +26,24 @@ public class FileUtils {
             return null;
         }
     }
+
+    public static String readFileAsString(String pathToFile) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(pathToFile));
+            String string = "";
+
+            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
+                string += line;
+            }
+
+            reader.close();
+            return string;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
