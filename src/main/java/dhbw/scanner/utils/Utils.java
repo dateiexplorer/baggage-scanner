@@ -5,11 +5,16 @@ import dhbw.scanner.passengers.HandBaggage;
 import dhbw.scanner.records.Position;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Utils {
 
     public static LocalDateTime getCurrentDateTime() {
         return LocalDateTime.now();
+    }
+
+    public static Date getCurrentDate() {
+        return new Date();
     }
 
     public static ProhibitedItem removeItemFromHandBaggageAtPosition(ProhibitedItem item, HandBaggage handBaggage, Position position) {

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestClass" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-11-30T21:51:42" hostname="devman" time="0.099">
+<testsuite name="TestClass" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-01T15:45:25" hostname="devman" time="1.796">
   <properties/>
-  <testcase name="testEmployeesAtBaggageScanner()" classname="TestClass" time="0.064"/>
-  <testcase name="testLockIDCardAfterThreeFailedAttempts()" classname="TestClass" time="0.01"/>
-  <testcase name="testSupervisorUnlockBaggageScanner()" classname="TestClass" time="0.005"/>
-  <testcase name="testBaggageFunctionsByProfileType()" classname="TestClass" time="0.011"/>
-  <testcase name="testProfileTypeKOrONotAccepted()" classname="TestClass" time="0.004"/>
+  <testcase name="testDetectKnife()" classname="TestClass" time="0.388"/>
+  <testcase name="testDetectWeapon()" classname="TestClass" time="0.159"/>
+  <testcase name="testEmployeesAtBaggageScanner()" classname="TestClass" time="0.214"/>
+  <testcase name="testLockIDCardAfterThreeFailedAttempts()" classname="TestClass" time="0.233"/>
+  <testcase name="testSupervisorUnlockBaggageScanner()" classname="TestClass" time="0.168"/>
+  <testcase name="testSimulationInitialization()" classname="TestClass" time="0.158"/>
+  <testcase name="testDetectExplosive()" classname="TestClass" time="0.152"/>
+  <testcase name="testBaggageFunctionsByProfileType()" classname="TestClass" time="0.155"/>
+  <testcase name="testProfileTypeKOrONotAccepted()" classname="TestClass" time="0.158"/>
   <system-out><![CDATA[Verification failed.
 Verification failed.
 Verification failed.

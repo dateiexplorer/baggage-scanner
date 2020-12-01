@@ -4,7 +4,7 @@ import dhbw.scanner.authentication.IDCard;
 
 import java.time.LocalDate;
 
-public abstract class Employee {
+public class Employee {
 
     protected int id;
     protected String name;

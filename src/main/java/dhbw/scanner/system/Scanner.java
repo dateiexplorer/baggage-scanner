@@ -19,7 +19,7 @@ public class Scanner {
         this.baggageScanner = baggageScanner;
     }
 
-    public Record scan() {
+    public Record scan(Tray trayToScan) {
         if (trayToScan == null) {
             System.out.println("There is no tray to scan. Aborted.");
             return null;
@@ -68,7 +68,7 @@ public class Scanner {
     }
 
     private String getCurrentTimestamp() {
-        return new SimpleDateFormat("dd.mm.yyy hh:mm:ss,SSS").format(Utils.getCurrentDateTime());
+        return new SimpleDateFormat("dd.MM.yyyy hh:mm:ss,SSS").format(Utils.getCurrentDate());
     }
 
     // Getter and setter

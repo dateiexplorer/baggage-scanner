@@ -11,10 +11,11 @@ public class HandBaggage {
     private Passenger owner;
 
     public HandBaggage(int id, Passenger owner) {
+        this.id = id;
         this.owner = owner;
         layers = new String[5];
 
-        layers = FileUtils.loadFileAsBaggageLayers(Configuration.DIRECTORY_PATH + id + ".txt");
+        layers = FileUtils.loadFileAsBaggageLayers(Configuration.HAND_BAGGAGE_DIR + "handBaggage_" + id + ".txt");
     }
 
     public String getContent() {

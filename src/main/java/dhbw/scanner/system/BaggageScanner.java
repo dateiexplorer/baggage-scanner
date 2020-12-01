@@ -94,7 +94,7 @@ public class BaggageScanner {
             return false;
         }
 
-        Record record = scanner.scan();
+        Record record = scanner.scan(scanner.getTrayToScan());
         if (record == null) {
             return true;
         }

@@ -1,6 +1,7 @@
 package dhbw.scanner;
 
 import dhbw.scanner.employees.*;
+import dhbw.scanner.passengers.HandBaggage;
 import dhbw.scanner.passengers.Passenger;
 import dhbw.scanner.police.FederalPoliceOffice;
 import dhbw.scanner.police.Robot;
@@ -10,6 +11,10 @@ import dhbw.scanner.system.BaggageScanner;
 import dhbw.scanner.system.Tray;
 import dhbw.scanner.utils.FileUtils;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -64,7 +69,32 @@ public class Simulation {
                         Configuration.INITIAL_PW));
 
         passengers = new ArrayList<>();
-        // TODO: Add passengers
+        addPassengers(passengers);
+    }
+
+    private void addPassengers(ArrayList<Passenger> passengers) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(Configuration.PASSENGER_FILE));
+            int handBaggageID = 0;
+
+            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
+                String[] inf = line.split(";");
+
+                Passenger p = new Passenger(inf[0]);
+                int numberOfHandBaggage = Integer.parseInt(inf[1]);
+                for (int i = 0; i < numberOfHandBaggage; i++) {
+                    p.addHandBaggage(new HandBaggage(handBaggageID++, p));
+                }
+
+                passengers.add(p);
+            }
+
+            reader.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void scanAllPassengers() {
@@ -157,5 +187,9 @@ public class Simulation {
 
     public FederalPoliceOffice getOffice() {
         return office;
+    }
+
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
     }
 }
