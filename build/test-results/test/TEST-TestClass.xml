@@ -1,21 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestClass" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-01T15:45:25" hostname="devman" time="1.796">
+<testsuite name="TestClass" tests="81" skipped="55" failures="1" errors="0" timestamp="2020-12-01T20:32:09" hostname="devman" time="2.145">
   <properties/>
-  <testcase name="testDetectKnife()" classname="TestClass" time="0.388"/>
-  <testcase name="testDetectWeapon()" classname="TestClass" time="0.159"/>
-  <testcase name="testEmployeesAtBaggageScanner()" classname="TestClass" time="0.214"/>
-  <testcase name="testLockIDCardAfterThreeFailedAttempts()" classname="TestClass" time="0.233"/>
-  <testcase name="testSupervisorUnlockBaggageScanner()" classname="TestClass" time="0.168"/>
-  <testcase name="testSimulationInitialization()" classname="TestClass" time="0.158"/>
-  <testcase name="testDetectExplosive()" classname="TestClass" time="0.152"/>
-  <testcase name="testBaggageFunctionsByProfileType()" classname="TestClass" time="0.155"/>
-  <testcase name="testProfileTypeKOrONotAccepted()" classname="TestClass" time="0.158"/>
+  <testcase name="testDetectKnife()" classname="TestClass" time="0.402"/>
+  <testcase name="testDetectWeapon()" classname="TestClass" time="0.29"/>
+  <testcase name="testEmployeesAtBaggageScanner()" classname="TestClass" time="0.17"/>
+  <testcase name="testLockIDCardAfterThreeFailedAttempts()" classname="TestClass" time="0.198"/>
+  <testcase name="testSupervisorUnlockBaggageScanner()" classname="TestClass" time="0.181"/>
+  <testcase name="testSimulationInitialization()" classname="TestClass" time="0.167"/>
+  <testcase name="testDetectExplosive()" classname="TestClass" time="0.203"/>
+  <testcase name="testBaggageFunctionsByProfileType()" classname="TestClass" time="0.168"/>
+  <testcase name="testRecords()[1]" classname="TestClass" time="0.009"/>
+  <testcase name="testRecords()[2]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[3]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[4]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[5]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[6]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecords()[7]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[8]" classname="TestClass" time="0.005"/>
+  <testcase name="testRecords()[9]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecords()[10]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[11]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecords()[12]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[13]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[14]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[15]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecords()[16]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecords()[17]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecords()[18]" classname="TestClass" time="0.006">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;prohibited item | weapon detected at position 4:3993&gt; but was: &lt;clean&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;prohibited item | weapon detected at position 4:3993&gt; but was: &lt;clean&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at TestClass.lambda$testRecords$0(TestClass.java:205)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:52)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:158)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:58)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:76)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:57)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:31)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:198)
+	at java.base/java.util.Optional.ifPresent(Optional.java:176)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:93)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</failure>
+  </testcase>
+  <testcase name="testRecords()[19]" classname="TestClass" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[20]" classname="TestClass" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[21]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[22]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[23]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[24]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[25]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[26]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[27]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[28]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[29]" classname="TestClass" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[30]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[31]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[32]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[33]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[34]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[35]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[36]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[37]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[38]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[39]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[40]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[41]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[42]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[43]" classname="TestClass" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[44]" classname="TestClass" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[45]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[46]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[47]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[48]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[49]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[50]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[51]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[52]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[53]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[54]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[55]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[56]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[57]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[58]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[59]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[60]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[61]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[62]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[63]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[64]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[65]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[66]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[67]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[68]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[69]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[70]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[71]" classname="TestClass" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[72]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecords()[73]" classname="TestClass" time="0.001">
+    <skipped/>
+  </testcase>
   <system-out><![CDATA[Verification failed.
 Verification failed.
 Verification failed.
 There is no tray to scan. Aborted.
-Your IDCard is not accepted.
-Your IDCard is not accepted.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

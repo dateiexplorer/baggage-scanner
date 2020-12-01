@@ -1,4 +1,5 @@
 import dhbw.scanner.Configuration;
+import dhbw.scanner.ProhibitedItem;
 import dhbw.scanner.Simulation;
 import dhbw.scanner.authentication.IDCard;
 import dhbw.scanner.authentication.MagnetStripe;
@@ -11,8 +12,22 @@ import dhbw.scanner.records.RecordResultType;
 import dhbw.scanner.system.BaggageScanner;
 import dhbw.scanner.system.State;
 import dhbw.scanner.system.Tray;
+import dhbw.scanner.utils.Utils;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestFactory;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -154,6 +169,55 @@ public class TestClass {
                 RecordResultType.DETECTED_EXPLOSIVE));
     }
 
+    @TestFactory
+    public Stream<DynamicTest> testRecords() {
+        ArrayList<HandBaggage> handBaggageList = new ArrayList<>();
+        for (Passenger p : sim.getPassengers()) {
+            handBaggageList.addAll(p.getHandBaggage());
+        }
+
+        HashMap<Integer, Integer> handBaggageIndexList = new HashMap<>();
+        List<String> recordsResultList = new ArrayList<>();
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(Configuration.RECORDS_FILE));
+            int index = 0;
+
+            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
+                String[] inf = line.split(";");
+                handBaggageIndexList.put(index++, Integer.parseInt(inf[0]));
+                recordsResultList.add(inf[3]);
+            }
+
+            reader.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return handBaggageIndexList.keySet().stream().map(index ->
+                DynamicTest.dynamicTest("test result " + index, () -> {
+            HandBaggage handBaggage = handBaggageList.get(handBaggageIndexList.get(index));
+            String recordResult = recordsResultList.get(index);
+
+            Record record = b.getScanner().scan(new Tray(handBaggage));
+            assertEquals(recordResult, record.getResult().toString());
+
+            ProhibitedItem prohibitedItem = switch(record.getResult().getType()) {
+                case DETECTED_KNIFE -> ProhibitedItem.KNIFE;
+                case DETECTED_WEAPON -> ProhibitedItem.WEAPON;
+                case DETECTED_EXPLOSIVE -> ProhibitedItem.EXPLOSIVE;
+                case CLEAN -> null;
+            };
+
+            if (prohibitedItem != null) {
+                Utils.removeItemFromHandBaggageAtPosition(prohibitedItem, handBaggage,
+                        record.getResult().getPosition());
+            }
+        }));
+    }
+
     private Employee buildGenericEmployee(ProfileType profileType) {
         return new Employee(0, null, null,
                 new IDCard(0, null, new MagnetStripe(profileType, Configuration.INITIAL_PW)));
@@ -161,7 +225,7 @@ public class TestClass {
 
     private boolean testProhibitedItem(HandBaggage handBaggage, RecordResultType expectedValue) {
         Tray tray = new Tray(handBaggage);
-        b.getScanner().scan(tray);
+        Record record = b.getScanner().scan(tray);
 
         RecordResultType recordResultType = Record.getLastRecord().getResult().getType();
         return recordResultType == expectedValue;

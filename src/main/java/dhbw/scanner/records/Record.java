@@ -28,6 +28,11 @@ public class Record {
         this.result = result;
     }
 
+    @Override
+    public String toString() {
+        return id + ";" + timestamp + ";" + result.toString();
+    }
+
     // Getter and setter
     public int getID() {
         return id;

@@ -2,13 +2,11 @@ package dhbw.scanner.system;
 
 import dhbw.scanner.Configuration;
 import dhbw.scanner.ProhibitedItem;
-import dhbw.scanner.records.Record;
 import dhbw.scanner.records.Position;
+import dhbw.scanner.records.Record;
 import dhbw.scanner.records.RecordResult;
 import dhbw.scanner.records.RecordResultType;
 import dhbw.scanner.utils.Utils;
-
-import java.text.SimpleDateFormat;
 
 public class Scanner {
 
@@ -20,6 +18,8 @@ public class Scanner {
     }
 
     public Record scan(Tray trayToScan) {
+        this.trayToScan = trayToScan;
+
         if (trayToScan == null) {
             System.out.println("There is no tray to scan. Aborted.");
             return null;
@@ -34,19 +34,19 @@ public class Scanner {
 
         // Scan contents of hand baggage.
         String[] layers = trayToScan.getHandBaggage().getLayers();
-        for (int i = 0; i < layers.length; i++) {
+        search: for (int i = 0; i < layers.length; i++) {
             layerIndex = i;
             for (ProhibitedItem item : ProhibitedItem.values()) {
                 charIndex = Configuration.SEARCH_ALGORITHM.search(layers[i], item.getPattern());
                 if (prohibitedItemFound(charIndex)) {
                     recordResultType = item.getRecordResultType();
-                    break;
+                    break search;
                 }
             }
         }
 
         // Create a record.
-        Record record = new Record(trayToScan.getHandBaggage().getID(), getCurrentTimestamp(),
+        Record record = new Record(trayToScan.getHandBaggage().getID(), Utils.getCurrentTimestamp(),
                 new RecordResult(recordResultType, new Position(layerIndex, charIndex)));
         Record.getRecords().add(record);
 
@@ -65,10 +65,6 @@ public class Scanner {
 
     private boolean prohibitedItemFound(int charIndex) {
         return charIndex > -1;
-    }
-
-    private String getCurrentTimestamp() {
-        return new SimpleDateFormat("dd.MM.yyyy hh:mm:ss,SSS").format(Utils.getCurrentDate());
     }
 
     // Getter and setter

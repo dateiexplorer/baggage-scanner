@@ -1,22 +1,38 @@
 package dhbw.scanner;
 
+import dhbw.scanner.records.Position;
+import dhbw.scanner.records.Record;
+import dhbw.scanner.records.RecordResult;
+import dhbw.scanner.records.RecordResultType;
+import dhbw.scanner.utils.Utils;
+
 import java.io.*;
 import java.util.ArrayList;
 
 public class DataGenerator {
 
+    private final int NUM_OF_LAYERS = 5;
+    private final int NUM_OF_CHARS = 10_000;
+    
     private final String ALLOWED_CHARS =
             "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789!@#$%^&*()[]{}-_=+;:,<.>/?|~";
 
+    private ArrayList<String> records;
+
     public static void main(String[] args) {
         DataGenerator generator = new DataGenerator();
-        generator.generate(Configuration.PASSENGER_FILE, Configuration.HAND_BAGGAGE_DIR);
+        generator.generate(Configuration.PASSENGER_FILE, Configuration.HAND_BAGGAGE_DIR, Configuration.RECORDS_FILE);
     }
 
-    public void generate(String pathToFile, String savePath) {
+    public DataGenerator() {
+        records = new ArrayList<>();
+    }
+
+    public void generate(String pathToFile, String savePath, String savePathRecords) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(pathToFile));
             int handBaggageID = 0;
+            int recordID = 0;
 
             for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                 String[] inf = line.split(";");
@@ -32,14 +48,23 @@ public class DataGenerator {
                 }
 
                 if (!inf[2].equals("-")) {
-                    generateProhibitedItems(inf, handBaggageList);
+                    for (int i = 2; i < inf.length; i++) {
+                        RecordResult recordResult = generateProhibitedItem(inf[i], handBaggageList);
+                        records.add(handBaggageID + ";" + new Record(recordID++, Utils.getCurrentTimestamp(),
+                                recordResult).toString());
+                    }
                 }
 
                 // Save hand baggage in files
                 for (String[] handBaggage : handBaggageList) {
+                    records.add(handBaggageID + ";" + new Record(recordID++, Utils.getCurrentTimestamp(),
+                            new RecordResult(RecordResultType.CLEAN, null)).toString());
                     write(savePath, handBaggageID++, handBaggage);
                 }
             }
+
+            // Save records in file
+            write(savePathRecords, records);
 
             reader.close();
         } catch (FileNotFoundException e) {
@@ -49,30 +74,37 @@ public class DataGenerator {
         }
     }
 
-    private void generateProhibitedItems(String[] inf, ArrayList<String[]> handBaggageList) {
-        for (int i = 2; i < inf.length; i++) {
-            // Delete brackets
-            inf[i] = inf[i].replaceAll("\\[|\\]", "");
+    private RecordResult generateProhibitedItem(String inf, ArrayList<String[]> handBaggageList) {
+        // Delete brackets
+        inf = inf.replaceAll("\\[|\\]", "");
 
-            String[] prohibitedItemInf = inf[i].split(",");
-            ProhibitedItem prohibitedItem = switch(prohibitedItemInf[0]) {
-                case "K" -> ProhibitedItem.KNIFE;
-                case "W" -> ProhibitedItem.WEAPON;
-                case "E" -> ProhibitedItem.EXPLOSIVE;
-                default -> throw new IllegalStateException("Unexpected value: " + prohibitedItemInf[0]);
-            };
+        String[] prohibitedItemInf = inf.split(",");
+        ProhibitedItem prohibitedItem = switch(prohibitedItemInf[0]) {
+            case "K" -> ProhibitedItem.KNIFE;
+            case "W" -> ProhibitedItem.WEAPON;
+            case "E" -> ProhibitedItem.EXPLOSIVE;
+            default -> throw new IllegalStateException("Unexpected value: " + prohibitedItemInf[0]);
+        };
 
-            // Baggage 1 has index 0
-            int handBaggageIndex = Integer.parseInt(prohibitedItemInf[1]) - 1;
+        // Baggage 1 has index 0
+        int handBaggageIndex = Integer.parseInt(prohibitedItemInf[1]) - 1;
 
-            // Layer 1 has index 0
-            int layerIndex = Integer.parseInt(prohibitedItemInf[2]) - 1;
+        // Layer 1 has index 0
+        int layerIndex = Integer.parseInt(prohibitedItemInf[2]) - 1;
 
-            String layer = handBaggageList.get(handBaggageIndex)[layerIndex];
+        String layer = handBaggageList.get(handBaggageIndex)[layerIndex];
 
-            int position = getRandomValidIndex(layer, prohibitedItem);
-            handBaggageList.get(handBaggageIndex)[layerIndex] = generateProhibitedItemInLayer(layer, prohibitedItem, position);
-        }
+        int charIndex = getRandomValidIndex(layer, prohibitedItem);
+        handBaggageList.get(handBaggageIndex)[layerIndex] =
+                generateProhibitedItemInLayer(layer, prohibitedItem, charIndex);
+
+        RecordResultType recordResultType = switch(prohibitedItem) {
+            case KNIFE -> RecordResultType.DETECTED_KNIFE;
+            case WEAPON -> RecordResultType.DETECTED_WEAPON;
+            case EXPLOSIVE -> RecordResultType.DETECTED_EXPLOSIVE;
+        };
+
+        return new RecordResult(recordResultType, new Position(layerIndex, charIndex));
     }
 
     private void write(String savePath, int handBaggageID, String[] handBaggage) throws IOException {
@@ -86,9 +118,20 @@ public class DataGenerator {
         writer.close();
     }
 
+    private void write(String savePath, ArrayList<String> records) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(savePath));
+        for (String r : records) {
+            writer.write(r);
+            writer.newLine();
+        }
+
+        writer.flush();
+        writer.close();
+    }
+
     private String[] generateHandBaggage() {
         String[] content = new String[5];
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < NUM_OF_LAYERS; i++) {
             content[i] = generateHandBaggageLayer();
         }
 
@@ -97,7 +140,7 @@ public class DataGenerator {
 
     private String generateHandBaggageLayer() {
         StringBuffer buffer = new StringBuffer();
-        for (int i = 0; i < 10_000; i++) {
+        for (int i = 0; i < NUM_OF_CHARS; i++) {
             int index = (int) (Math.random() * ALLOWED_CHARS.length());
             buffer.append(ALLOWED_CHARS.charAt(index));
         }

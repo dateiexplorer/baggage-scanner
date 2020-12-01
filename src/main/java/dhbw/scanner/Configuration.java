@@ -12,6 +12,8 @@ public class Configuration {
 
     public static final String PASSENGER_FILE = DIRECTORY_PATH + "passenger_baggage.txt";
 
+    public static final String RECORDS_FILE = DIRECTORY_PATH + "baggage_records.txt";
+
     public static final String HAND_BAGGAGE_DIR = DIRECTORY_PATH + "handBaggage/";
 
     public static final TemporalAmount TIME_UNTIL_ID_CARD_IS_INVALID = Period.ofMonths(6);
