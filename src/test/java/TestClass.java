@@ -13,12 +13,7 @@ import dhbw.scanner.system.BaggageScanner;
 import dhbw.scanner.system.State;
 import dhbw.scanner.system.Tray;
 import dhbw.scanner.utils.Utils;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestFactory;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.api.*;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -31,6 +26,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TestClass {
 
     private static final String FALSE_PIN = "0000";
@@ -57,6 +53,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(1)
     public void testSimulationInitialization() {
         var passengers = sim.getPassengers();
         assertEquals(568, passengers.size());
@@ -70,6 +67,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(2)
     public void testEmployeesAtBaggageScanner() {
         assertNotNull(b.getRollerConveyorInspector());
         assertNotNull(b.getOperatingStationInspector());
@@ -79,6 +77,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(3)
     public void testLockIDCardAfterThreeFailedAttempts() {
         for (int i = 0; i < Configuration.FAILED_ATTEMPTS_TO_LOCK; i++) {
             b.getOperatingStationInspector().swipeIDCardThroughReader(FALSE_PIN);
@@ -88,6 +87,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(4)
     public void testProfileTypeKOrONotAccepted() {
         assertFalse(b.getOperatingStation().getReader()
                 .verify(employeeK.getIDCard(), Configuration.INITIAL_PW));
@@ -96,6 +96,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(5)
     public void testBaggageFunctionsByProfileType() {
         // K
         assertFalse(b.moveBeltForward(employeeK));
@@ -139,6 +140,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(6)
     public void testSupervisorUnlockBaggageScanner() {
         b.setState(State.LOCKED);
         assertFalse(b.unlock(employeeK, Configuration.INITIAL_PW));
@@ -149,6 +151,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(7)
     public void testDetectKnife() {
         // Baggage (0) from passenger (6) has a knife
         assertTrue(testProhibitedItem(sim.getPassengers().get(6).getHandBaggage().get(0),
@@ -156,6 +159,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(8)
     public void testDetectWeapon() {
         // Baggage (1) from passenger (14) has a weapon
         assertTrue(testProhibitedItem(sim.getPassengers().get(14).getHandBaggage().get(1),
@@ -163,6 +167,7 @@ public class TestClass {
     }
 
     @Test
+    @Order(9)
     public void testDetectExplosive() {
         // Baggage (0) from passenger (418) has an explosive
         assertTrue(testProhibitedItem(sim.getPassengers().get(418).getHandBaggage().get(0),
@@ -170,14 +175,14 @@ public class TestClass {
     }
 
     @TestFactory
-    public Stream<DynamicTest> testRecords() {
-        ArrayList<HandBaggage> handBaggageList = new ArrayList<>();
-        for (Passenger p : sim.getPassengers()) {
-            handBaggageList.addAll(p.getHandBaggage());
-        }
+    @Order(10)
+    public Stream<DynamicTest> testRecordResults() {
+        // Load hand baggage as list
+        ArrayList<HandBaggage> handBaggageList = getHandBaggageList();
 
+        // Create List with Hand Baggage and indices.
         HashMap<Integer, Integer> handBaggageIndexList = new HashMap<>();
-        List<String> recordsResultList = new ArrayList<>();
+        List<String> expectedRecordResultList = new ArrayList<>();
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(Configuration.RECORDS_FILE));
@@ -185,8 +190,10 @@ public class TestClass {
 
             for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                 String[] inf = line.split(";");
+
+                // Create structure like: index -> handBaggageID -> expectedRecordResult
                 handBaggageIndexList.put(index++, Integer.parseInt(inf[0]));
-                recordsResultList.add(inf[3]);
+                expectedRecordResultList.add(inf[3]);
             }
 
             reader.close();
@@ -196,14 +203,17 @@ public class TestClass {
             e.printStackTrace();
         }
 
+        // Create dynamic tests
         return handBaggageIndexList.keySet().stream().map(index ->
-                DynamicTest.dynamicTest("test result " + index, () -> {
+                DynamicTest.dynamicTest("testRecordResults for record with id=" + index, () -> {
             HandBaggage handBaggage = handBaggageList.get(handBaggageIndexList.get(index));
-            String recordResult = recordsResultList.get(index);
+            String recordResult = expectedRecordResultList.get(index);
 
+            // Scan baggage
             Record record = b.getScanner().scan(new Tray(handBaggage));
             assertEquals(recordResult, record.getResult().toString());
 
+            // If prohibited items found, remove it for next test
             ProhibitedItem prohibitedItem = switch(record.getResult().getType()) {
                 case DETECTED_KNIFE -> ProhibitedItem.KNIFE;
                 case DETECTED_WEAPON -> ProhibitedItem.WEAPON;
@@ -218,9 +228,19 @@ public class TestClass {
         }));
     }
 
+    // Helper methods
     private Employee buildGenericEmployee(ProfileType profileType) {
         return new Employee(0, null, null,
                 new IDCard(0, null, new MagnetStripe(profileType, Configuration.INITIAL_PW)));
+    }
+
+    private ArrayList<HandBaggage> getHandBaggageList() {
+        ArrayList<HandBaggage> handBaggageList = new ArrayList<>();
+        for (Passenger p : sim.getPassengers()) {
+            handBaggageList.addAll(p.getHandBaggage());
+        }
+
+        return handBaggageList;
     }
 
     private boolean testProhibitedItem(HandBaggage handBaggage, RecordResultType expectedValue) {

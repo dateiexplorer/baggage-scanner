@@ -3,7 +3,6 @@ package dhbw.scanner.system;
 import dhbw.scanner.Configuration;
 import dhbw.scanner.authentication.ProfileType;
 import dhbw.scanner.employees.*;
-import dhbw.scanner.police.FederalPoliceOffice;
 import dhbw.scanner.records.Record;
 import dhbw.scanner.records.RecordResultType;
 import dhbw.scanner.utils.AuthUtils;

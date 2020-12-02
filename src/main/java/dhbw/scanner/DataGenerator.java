@@ -13,11 +13,13 @@ public class DataGenerator {
 
     private final int NUM_OF_LAYERS = 5;
     private final int NUM_OF_CHARS = 10_000;
-    
+
     private final String ALLOWED_CHARS =
             "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789!@#$%^&*()[]{}-_=+;:,<.>/?|~";
 
     private ArrayList<String> records;
+    private int handBaggageID;
+    private int recordID;
 
     public static void main(String[] args) {
         DataGenerator generator = new DataGenerator();
@@ -31,8 +33,8 @@ public class DataGenerator {
     public void generate(String pathToFile, String savePath, String savePathRecords) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(pathToFile));
-            int handBaggageID = 0;
-            int recordID = 0;
+            handBaggageID = 0;
+            recordID = 0;
 
             for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                 String[] inf = line.split(";");
@@ -49,9 +51,7 @@ public class DataGenerator {
 
                 if (!inf[2].equals("-")) {
                     for (int i = 2; i < inf.length; i++) {
-                        RecordResult recordResult = generateProhibitedItem(inf[i], handBaggageList);
-                        records.add(handBaggageID + ";" + new Record(recordID++, Utils.getCurrentTimestamp(),
-                                recordResult).toString());
+                        generateProhibitedItem(inf[i], handBaggageList);
                     }
                 }
 
@@ -95,8 +95,9 @@ public class DataGenerator {
         String layer = handBaggageList.get(handBaggageIndex)[layerIndex];
 
         int charIndex = getRandomValidIndex(layer, prohibitedItem);
-        handBaggageList.get(handBaggageIndex)[layerIndex] =
-                generateProhibitedItemInLayer(layer, prohibitedItem, charIndex);
+        layer = generateProhibitedItemInLayer(layer, prohibitedItem, charIndex);
+
+        handBaggageList.get(handBaggageIndex)[layerIndex] = layer;
 
         RecordResultType recordResultType = switch(prohibitedItem) {
             case KNIFE -> RecordResultType.DETECTED_KNIFE;
@@ -104,7 +105,13 @@ public class DataGenerator {
             case EXPLOSIVE -> RecordResultType.DETECTED_EXPLOSIVE;
         };
 
-        return new RecordResult(recordResultType, new Position(layerIndex, charIndex));
+        RecordResult recordResult = new RecordResult(recordResultType, new Position(layerIndex, charIndex));
+
+        // Baggage id is basic handBaggageID + currentHandBaggageIndex
+        records.add(handBaggageID + handBaggageIndex + ";" + new Record(recordID++, Utils.getCurrentTimestamp(),
+                recordResult).toString());
+
+        return recordResult;
     }
 
     private void write(String savePath, int handBaggageID, String[] handBaggage) throws IOException {
