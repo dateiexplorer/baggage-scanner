@@ -4,7 +4,7 @@ import dhbw.scanner.records.RecordResultType;
 
 public enum ProhibitedItem {
     KNIFE("kn!fe", RecordResultType.DETECTED_KNIFE),
-    WEAPON("glock!7", RecordResultType.DETECTED_WEAPON),
+    WEAPON("glock|7", RecordResultType.DETECTED_WEAPON),
     EXPLOSIVE("exp|os!ve", RecordResultType.DETECTED_EXPLOSIVE);
 
     private String pattern;

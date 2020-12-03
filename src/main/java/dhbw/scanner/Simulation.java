@@ -106,9 +106,10 @@ public class Simulation {
         b.maintenance(technician);
     }
 
-    public Record scan(Passenger passenger) {
+    public boolean scan(Passenger passenger) {
+        o2 = null;
+        o3 = null;
         passenger.tryToPutHandBaggageOnRollerConveyor(b);
-        Record record = null;
 
         // Scan all hand baggage
         while (!b.getRollerConveyor().isEmpty()) {
@@ -119,7 +120,7 @@ public class Simulation {
             Tray tray = b.getScanner().getTrayToScan();
 
             // Get last record.
-            record = Record.getLastRecord();
+            Record record = Record.getLastRecord();
 
             // CLEAN
             if (record.getResult().getType() == RecordResultType.CLEAN) {
@@ -135,7 +136,9 @@ public class Simulation {
 
                 b.getOperatingStationInspector().pushButton(b.getOperatingStation().getButtonLeftArrow());
                 b.getOperatingStationInspector().pushButton(b.getOperatingStation().getButtonRectangle());
-                return record;
+
+                // If knife detected, do no more scans.
+                return true;
             }
 
             // DETECTED_WEAPON | DETECTED_EXPLOSIVE
@@ -145,34 +148,44 @@ public class Simulation {
             o2 = office.getFederalPoliceOfficer();
             o3 = office.getFederalPoliceOfficer();
 
+            // Check, officers are on Duty
+            if (!o2.isOnDuty() || !o3.isOnDuty()) {
+                return false;
+            }
+
             // DETECTED_WEAPON
             if (record.getResult().getType() == RecordResultType.DETECTED_WEAPON) {
                 ProhibitedItem weapon =
                         b.getFederalPoliceOfficer().removeWeaponFromBaggage(tray.getHandBaggage(), record);
                 o3.setProhibitedItem(weapon);
 
-                // Scan next baggage
-                continue;
+                // If weapon detected, scan other baggage.
+                // Do not return!
             }
 
             // DETECTED_EXPLOSIVE
-            Robot robot = office.getRandomRobot(o2);
             if (record.getResult().getType() == RecordResultType.DETECTED_EXPLOSIVE) {
+                Robot robot = office.getRandomRobot(o2);
                 if (b.getManualPostControlInspector().swipeAndDetectedExplosive(testStripe)) {
                     robot.destroy(tray.getHandBaggage());
                 }
+
+                break;
             }
-
-            // Leave control area.
-            o2.setOnDuty(false);
-            o3.setOnDuty(false);
-
-            // Unlock baggage scanner.
-            b.unlock(b.getSupervisor(),
-                    b.getSupervisor().getIDCard().getMagnetStripe().getPin(Configuration.SECRET_KEY));
         }
 
-        return record;
+        // After all scanned, leave control area
+        if (o2 != null) {
+            o2.setOnDuty(false);
+        }
+
+        if (o3 != null) {
+            o3.setOnDuty(false);
+        }
+
+        // Unlock baggage scanner.
+        b.unlock(b.getSupervisor(), b.getSupervisor().getIDCard().getMagnetStripe().getPin(Configuration.SECRET_KEY));
+        return true;
     }
 
     // Getter and setter

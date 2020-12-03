@@ -25,6 +25,7 @@ public class FederalPoliceOffice {
     public FederalPoliceOfficer getFederalPoliceOfficer() {
         for (FederalPoliceOfficer officer : officers) {
             if (!officer.isOnDuty()) {
+                officer.setOnDuty(true);
                 return officer;
             }
         }
