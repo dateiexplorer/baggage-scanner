@@ -106,8 +106,9 @@ public class Simulation {
         b.maintenance(technician);
     }
 
-    public void scan(Passenger passenger) {
+    public Record scan(Passenger passenger) {
         passenger.tryToPutHandBaggageOnRollerConveyor(b);
+        Record record = null;
 
         // Scan all hand baggage
         while (!b.getRollerConveyor().isEmpty()) {
@@ -118,12 +119,12 @@ public class Simulation {
             Tray tray = b.getScanner().getTrayToScan();
 
             // Get last record.
-            Record record = Record.getLastRecord();
+            record = Record.getLastRecord();
 
             // CLEAN
             if (record.getResult().getType() == RecordResultType.CLEAN) {
                 passenger.takeHandBaggageFromTrack02(b);
-                return;
+                continue;
             }
 
             // Prohibited item detected.
@@ -134,7 +135,7 @@ public class Simulation {
 
                 b.getOperatingStationInspector().pushButton(b.getOperatingStation().getButtonLeftArrow());
                 b.getOperatingStationInspector().pushButton(b.getOperatingStation().getButtonRectangle());
-                return;
+                return record;
             }
 
             // DETECTED_WEAPON | DETECTED_EXPLOSIVE
@@ -170,6 +171,8 @@ public class Simulation {
             b.unlock(b.getSupervisor(),
                     b.getSupervisor().getIDCard().getMagnetStripe().getPin(Configuration.SECRET_KEY));
         }
+
+        return record;
     }
 
     // Getter and setter
@@ -187,6 +190,14 @@ public class Simulation {
 
     public FederalPoliceOffice getOffice() {
         return office;
+    }
+
+    public FederalPoliceOfficer getO2() {
+        return o2;
+    }
+
+    public FederalPoliceOfficer getO3() {
+        return o3;
     }
 
     public ArrayList<Passenger> getPassengers() {

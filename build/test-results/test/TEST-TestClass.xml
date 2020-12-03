@@ -1,410 +1,410 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestClass" tests="629" skipped="0" failures="0" errors="0" timestamp="2020-12-02T12:11:52" hostname="devman" time="1.828">
+<testsuite name="TestClass" tests="633" skipped="0" failures="0" errors="0" timestamp="2020-12-03T12:25:31" hostname="devman" time="2.147">
   <properties/>
   <testcase name="testSimulationInitialization()" classname="TestClass" time="0.237"/>
-  <testcase name="testEmployeesAtBaggageScanner()" classname="TestClass" time="0.161"/>
-  <testcase name="testLockIDCardAfterThreeFailedAttempts()" classname="TestClass" time="0.105"/>
+  <testcase name="testEmployeesAtBaggageScanner()" classname="TestClass" time="0.106"/>
+  <testcase name="testLockIDCardAfterThreeFailedAttempts()" classname="TestClass" time="0.106"/>
   <testcase name="testProfileTypeKOrONotAccepted()" classname="TestClass" time="0.107"/>
-  <testcase name="testBaggageFunctionsByProfileType()" classname="TestClass" time="0.103"/>
-  <testcase name="testSupervisorUnlockBaggageScanner()" classname="TestClass" time="0.11"/>
-  <testcase name="testDetectKnife()" classname="TestClass" time="0.093"/>
-  <testcase name="testDetectWeapon()" classname="TestClass" time="0.09"/>
-  <testcase name="testDetectExplosive()" classname="TestClass" time="0.102"/>
+  <testcase name="testBaggageFunctionsByProfileType()" classname="TestClass" time="0.097"/>
+  <testcase name="testSupervisorUnlockBaggageScanner()" classname="TestClass" time="0.1"/>
+  <testcase name="testDetectKnife()" classname="TestClass" time="0.086"/>
+  <testcase name="testDetectWeapon()" classname="TestClass" time="0.076"/>
+  <testcase name="testDetectExplosive()" classname="TestClass" time="0.076"/>
   <testcase name="testRecordResults()[1]" classname="TestClass" time="0.004"/>
   <testcase name="testRecordResults()[2]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[3]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[4]" classname="TestClass" time="0.002"/>
-  <testcase name="testRecordResults()[5]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[6]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[7]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[8]" classname="TestClass" time="0.003"/>
-  <testcase name="testRecordResults()[9]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[4]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[5]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[6]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[7]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[8]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[9]" classname="TestClass" time="0.003"/>
   <testcase name="testRecordResults()[10]" classname="TestClass" time="0.002"/>
-  <testcase name="testRecordResults()[11]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[12]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[11]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[12]" classname="TestClass" time="0.002"/>
   <testcase name="testRecordResults()[13]" classname="TestClass" time="0.002"/>
-  <testcase name="testRecordResults()[14]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[15]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[14]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[15]" classname="TestClass" time="0.002"/>
   <testcase name="testRecordResults()[16]" classname="TestClass" time="0.002"/>
-  <testcase name="testRecordResults()[17]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[17]" classname="TestClass" time="0.002"/>
   <testcase name="testRecordResults()[18]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[19]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[20]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[20]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[21]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[22]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[23]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[24]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[25]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[26]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[22]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[23]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[24]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[25]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[26]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[27]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[28]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[29]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[29]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[30]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[31]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[31]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[32]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[33]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[34]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[35]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[36]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[36]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[37]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[38]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[39]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[40]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[40]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[41]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[42]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[43]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[44]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[42]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[43]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[44]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[45]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[46]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[47]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[48]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[46]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[47]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[48]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[49]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[50]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[51]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[51]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[52]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[53]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[54]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[55]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[56]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[57]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[57]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[58]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[59]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[59]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[60]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[61]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[62]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[63]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[62]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[63]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[64]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[65]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[66]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[67]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[68]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[65]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[66]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[67]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[68]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[69]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[70]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[71]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[70]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[71]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[72]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[73]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[73]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[74]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[75]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[76]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[76]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[77]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[78]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[79]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[80]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[81]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[79]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[80]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[81]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[82]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[83]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[84]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[84]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[85]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[86]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[86]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[87]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[88]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[89]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[89]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[90]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[91]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[92]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[91]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[92]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[93]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[94]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[95]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[96]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[97]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[98]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[97]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[98]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[99]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[100]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[100]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[101]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[102]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[103]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[104]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[105]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[106]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[107]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[108]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[109]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[110]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[104]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[105]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[106]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[107]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[108]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[109]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[110]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[111]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[112]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[112]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[113]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[114]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[115]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[114]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[115]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[116]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[117]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[118]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[119]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[117]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[118]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[119]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[120]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[121]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[122]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[123]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[124]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[121]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[122]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[123]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[124]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[125]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[126]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[127]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[128]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[129]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[127]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[128]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[129]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[130]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[131]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[132]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[131]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[132]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[133]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[134]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[135]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[136]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[136]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[137]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[138]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[138]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[139]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[140]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[140]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[141]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[142]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[143]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[143]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[144]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[145]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[145]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[146]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[147]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[148]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[149]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[149]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[150]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[151]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[152]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[153]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[154]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[153]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[154]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[155]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[156]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[157]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[158]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[159]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[160]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[159]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[160]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[161]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[162]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[162]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[163]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[164]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[165]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[166]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[165]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[166]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[167]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[168]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[169]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[170]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[171]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[168]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[169]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[170]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[171]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[172]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[173]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[174]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[175]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[174]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[175]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[176]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[177]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[178]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[179]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[179]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[180]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[181]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[182]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[183]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[181]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[182]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[183]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[184]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[185]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[186]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[185]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[186]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[187]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[188]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[189]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[190]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[191]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[189]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[190]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[191]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[192]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[193]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[193]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[194]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[195]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[195]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[196]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[197]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[198]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[199]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[200]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[197]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[198]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[199]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[200]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[201]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[202]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[202]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[203]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[204]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[205]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[206]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[204]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[205]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[206]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[207]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[208]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[209]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[210]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[208]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[209]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[210]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[211]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[212]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[213]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[213]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[214]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[215]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[216]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[216]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[217]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[218]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[219]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[218]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[219]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[220]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[221]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[222]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[222]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[223]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[224]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[224]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[225]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[226]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[227]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[228]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[229]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[230]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[229]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[230]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[231]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[232]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[233]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[234]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[234]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[235]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[236]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[236]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[237]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[238]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[239]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[239]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[240]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[241]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[242]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[242]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[243]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[244]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[245]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[246]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[247]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[248]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[246]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[247]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[248]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[249]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[250]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[251]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[252]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[253]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[254]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[255]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[255]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[256]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[257]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[258]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[259]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[257]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[258]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[259]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[260]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[261]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[262]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[263]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[264]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[262]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[263]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[264]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[265]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[266]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[267]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[268]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[269]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[266]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[267]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[268]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[269]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[270]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[271]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[272]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[273]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[274]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[275]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[276]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[271]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[272]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[273]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[274]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[275]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[276]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[277]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[278]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[279]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[280]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[281]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[282]" classname="TestClass" time="0.002"/>
-  <testcase name="testRecordResults()[283]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[284]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[285]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[286]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[287]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[281]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[282]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[283]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[284]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[285]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[286]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[287]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[288]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[289]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[290]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[289]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[290]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[291]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[292]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[293]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[294]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[294]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[295]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[296]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[296]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[297]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[298]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[298]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[299]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[300]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[300]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[301]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[302]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[303]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[304]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[305]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[302]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[303]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[304]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[305]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[306]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[307]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[308]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[307]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[308]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[309]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[310]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[311]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[310]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[311]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[312]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[313]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[313]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[314]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[315]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[316]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[316]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[317]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[318]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[319]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[318]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[319]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[320]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[321]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[322]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[322]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[323]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[324]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[325]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[326]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[325]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[326]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[327]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[328]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[328]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[329]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[330]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[331]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[332]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[330]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[331]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[332]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[333]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[334]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[335]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[336]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[337]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[337]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[338]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[339]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[340]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[339]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[340]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[341]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[342]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[343]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[344]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[345]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[346]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[347]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[348]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[346]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[347]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[348]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[349]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[350]" classname="TestClass" time="0.006"/>
+  <testcase name="testRecordResults()[350]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[351]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[352]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[353]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[354]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[354]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[355]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[356]" classname="TestClass" time="0.002"/>
-  <testcase name="testRecordResults()[357]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[356]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[357]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[358]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[359]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[360]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[361]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[362]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[363]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[364]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[361]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[362]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[363]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[364]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[365]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[366]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[367]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[366]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[367]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[368]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[369]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[370]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[371]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[372]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[371]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[372]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[373]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[374]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[374]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[375]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[376]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[377]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[377]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[378]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[379]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[379]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[380]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[381]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[382]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[382]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[383]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[384]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[385]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[384]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[385]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[386]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[387]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[388]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[388]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[389]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[390]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[391]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[392]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[393]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[392]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[393]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[394]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[395]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[395]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[396]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[397]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[398]" classname="TestClass" time="0.0"/>
@@ -412,224 +412,228 @@
   <testcase name="testRecordResults()[400]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[401]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[402]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[403]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[403]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[404]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[405]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[406]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[407]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[408]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[409]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[410]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[411]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[409]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[410]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[411]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[412]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[413]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[413]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[414]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[415]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[416]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[417]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[418]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[419]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[418]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[419]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[420]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[421]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[422]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[423]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[424]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[423]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[424]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[425]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[426]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[426]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[427]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[428]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[428]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[429]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[430]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[430]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[431]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[432]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[433]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[434]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[433]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[434]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[435]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[436]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[437]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[436]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[437]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[438]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[439]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[440]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[441]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[442]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[443]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[444]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[445]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[446]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[447]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[443]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[444]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[445]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[446]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[447]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[448]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[449]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[449]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[450]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[451]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[452]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[451]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[452]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[453]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[454]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[455]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[454]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[455]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[456]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[457]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[458]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[459]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[460]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[459]" classname="TestClass" time="0.015"/>
+  <testcase name="testRecordResults()[460]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[461]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[462]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[463]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[464]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[465]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[466]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[467]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[468]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[464]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[465]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[466]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[467]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[468]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[469]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[470]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[471]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[472]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[472]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[473]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[474]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[474]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[475]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[476]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[477]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[476]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[477]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[478]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[479]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[479]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[480]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[481]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[482]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[481]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[482]" classname="TestClass" time="0.003"/>
   <testcase name="testRecordResults()[483]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[484]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[485]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[486]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[487]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[485]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[486]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[487]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[488]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[489]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[490]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[490]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[491]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[492]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[492]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[493]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[494]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[495]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[495]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[496]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[497]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[498]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[498]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[499]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[500]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[501]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[501]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[502]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[503]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[504]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[505]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[506]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[507]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[508]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[509]" classname="TestClass" time="0.003"/>
+  <testcase name="testRecordResults()[506]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[507]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[508]" classname="TestClass" time="0.002"/>
+  <testcase name="testRecordResults()[509]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[510]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[511]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[512]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[513]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[514]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[513]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[514]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[515]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[516]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[517]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[518]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[519]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[519]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[520]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[521]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[522]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[522]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[523]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[524]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[524]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[525]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[526]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[527]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[528]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[526]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[527]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[528]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[529]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[530]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[531]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[532]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[533]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[534]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[535]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[536]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[537]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[538]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[539]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[535]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[536]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[537]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[538]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[539]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[540]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[541]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[542]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[543]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[543]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[544]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[545]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[546]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[547]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[546]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[547]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[548]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[549]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[550]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[551]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[552]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[553]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[554]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[555]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[553]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[554]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[555]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[556]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[557]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[558]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[559]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[560]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[558]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[559]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[560]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[561]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[562]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[563]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[562]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[563]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[564]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[565]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[566]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[567]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[567]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[568]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[569]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[570]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[570]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[571]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[572]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[573]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[574]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[572]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[573]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[574]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[575]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[576]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[577]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[578]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[579]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[580]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[578]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[579]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[580]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[581]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[582]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[583]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[584]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[583]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[584]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[585]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[586]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[587]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[588]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[589]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[590]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[591]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[586]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[587]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[588]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[589]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[590]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[591]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[592]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[593]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[594]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[595]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[596]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[597]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[598]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[599]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[598]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[599]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[600]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[601]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[601]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[602]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[603]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[604]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[605]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[603]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[604]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[605]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[606]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[607]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[607]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[608]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[609]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[609]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[610]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[611]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[612]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[613]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[613]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[614]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[615]" classname="TestClass" time="0.001"/>
-  <testcase name="testRecordResults()[616]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[616]" classname="TestClass" time="0.001"/>
   <testcase name="testRecordResults()[617]" classname="TestClass" time="0.0"/>
   <testcase name="testRecordResults()[618]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[619]" classname="TestClass" time="0.0"/>
-  <testcase name="testRecordResults()[620]" classname="TestClass" time="0.0"/>
+  <testcase name="testRecordResults()[619]" classname="TestClass" time="0.001"/>
+  <testcase name="testRecordResults()[620]" classname="TestClass" time="0.002"/>
+  <testcase name="testProcedureNothingFound()" classname="TestClass" time="0.129"/>
+  <testcase name="testProcedureKnifeFound()" classname="TestClass" time="0.084"/>
+  <testcase name="testProcedureWeaponFound()" classname="TestClass" time="0.084"/>
+  <testcase name="testProcedureExplosiveFound()" classname="TestClass" time="0.086"/>
   <system-out><![CDATA[Verification failed.
 Verification failed.
 Verification failed.

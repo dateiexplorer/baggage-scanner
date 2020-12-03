@@ -59,7 +59,6 @@ public class Scanner {
             baggageScanner.getTrack01().setCurrentTray(trayToScan);
         }
 
-        setTrayToScan(null);
         return record;
     }
 

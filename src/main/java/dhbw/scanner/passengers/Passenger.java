@@ -23,13 +23,12 @@ public class Passenger {
     public boolean tryToPutHandBaggageOnRollerConveyor(BaggageScanner baggageScanner) {
         for (HandBaggage b : handBaggage) {
             boolean succeeded = baggageScanner.getRollerConveyor().addTrayToQueue(new Tray(b));
-            if (succeeded) {
-                handBaggage.remove(b);
-            } else {
+            if (!succeeded) {
                 return false;
             }
         }
 
+        handBaggage.clear();
         return true;
     }
 

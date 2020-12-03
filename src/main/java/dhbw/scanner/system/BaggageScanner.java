@@ -84,7 +84,7 @@ public class BaggageScanner {
             return false;
         }
 
-        scanner.setTrayToScan(track02.getCurrentTray());
+        scanner.setTrayToScan(track01.getCurrentTray());
         return true;
     }
 

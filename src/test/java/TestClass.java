@@ -228,6 +228,30 @@ public class TestClass {
         }));
     }
 
+    @Test
+    @Order(11)
+    public void testProcedureNothingFound() {
+        assertTrue(TestUtility.testProcedureNothingFound(sim));
+    }
+
+    @Test
+    @Order(12)
+    public void testProcedureKnifeFound() {
+        assertTrue(TestUtility.testProcedureKnifeFound(sim));
+    }
+
+    @Test
+    @Order(13)
+    public void testProcedureWeaponFound() {
+        assertTrue(TestUtility.testProcedureWeaponFound(sim));
+    }
+
+    @Test
+    @Order(14)
+    public void testProcedureExplosiveFound() {
+        assertTrue(TestUtility.testProcedureExplosiveFound(sim));
+    }
+
     // Helper methods
     private Employee buildGenericEmployee(ProfileType profileType) {
         return new Employee(0, null, null,
@@ -245,7 +269,7 @@ public class TestClass {
 
     private boolean testProhibitedItem(HandBaggage handBaggage, RecordResultType expectedValue) {
         Tray tray = new Tray(handBaggage);
-        Record record = b.getScanner().scan(tray);
+        b.getScanner().scan(tray);
 
         RecordResultType recordResultType = Record.getLastRecord().getResult().getType();
         return recordResultType == expectedValue;

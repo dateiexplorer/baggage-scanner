@@ -16,7 +16,7 @@ public class RollerConveyor {
     }
 
     public boolean addTrayToQueue(Tray tray) {
-        if (baggageScanner.getProvisionOfTrays().onTakeATray()) {
+        if (!baggageScanner.getProvisionOfTrays().onTakeATray()) {
             System.out.println("No trays available.");
             return false;
         }
