@@ -1,7 +1,7 @@
 package dhbw.scanner.system;
 
 import dhbw.scanner.Configuration;
-import dhbw.scanner.ProhibitedItem;
+import dhbw.scanner.baggage.ProhibitedItem;
 import dhbw.scanner.records.Position;
 import dhbw.scanner.records.Record;
 import dhbw.scanner.records.RecordResult;

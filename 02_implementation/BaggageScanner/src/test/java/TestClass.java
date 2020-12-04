@@ -1,12 +1,12 @@
 import dhbw.scanner.Configuration;
-import dhbw.scanner.ProhibitedItem;
+import dhbw.scanner.baggage.ProhibitedItem;
 import dhbw.scanner.Simulation;
 import dhbw.scanner.authentication.IDCard;
 import dhbw.scanner.authentication.MagnetStripe;
 import dhbw.scanner.authentication.ProfileType;
 import dhbw.scanner.employees.Employee;
-import dhbw.scanner.passengers.HandBaggage;
-import dhbw.scanner.passengers.Passenger;
+import dhbw.scanner.baggage.HandBaggage;
+import dhbw.scanner.Passenger;
 import dhbw.scanner.records.Record;
 import dhbw.scanner.records.RecordResultType;
 import dhbw.scanner.system.BaggageScanner;

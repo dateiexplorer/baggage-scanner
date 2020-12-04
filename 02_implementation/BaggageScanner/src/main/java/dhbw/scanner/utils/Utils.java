@@ -1,7 +1,7 @@
 package dhbw.scanner.utils;
 
-import dhbw.scanner.ProhibitedItem;
-import dhbw.scanner.passengers.HandBaggage;
+import dhbw.scanner.baggage.ProhibitedItem;
+import dhbw.scanner.baggage.HandBaggage;
 import dhbw.scanner.records.Position;
 
 import java.text.SimpleDateFormat;

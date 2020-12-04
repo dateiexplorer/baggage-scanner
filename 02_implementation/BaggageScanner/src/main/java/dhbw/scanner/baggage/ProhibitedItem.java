@@ -1,4 +1,4 @@
-package dhbw.scanner;
+package dhbw.scanner.baggage;
 
 import dhbw.scanner.records.RecordResultType;
 

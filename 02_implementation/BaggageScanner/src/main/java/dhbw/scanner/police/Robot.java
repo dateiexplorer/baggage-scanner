@@ -1,7 +1,6 @@
 package dhbw.scanner.police;
 
-import dhbw.scanner.employees.FederalPoliceOfficer;
-import dhbw.scanner.passengers.HandBaggage;
+import dhbw.scanner.baggage.HandBaggage;
 
 public class Robot {
 

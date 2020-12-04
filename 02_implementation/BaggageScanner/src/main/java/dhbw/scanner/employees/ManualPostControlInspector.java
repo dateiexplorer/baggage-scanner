@@ -1,10 +1,9 @@
 package dhbw.scanner.employees;
 
 
-import dhbw.scanner.ProhibitedItem;
-import dhbw.scanner.passengers.HandBaggage;
+import dhbw.scanner.baggage.ProhibitedItem;
+import dhbw.scanner.baggage.HandBaggage;
 import dhbw.scanner.records.Record;
-import dhbw.scanner.system.ExplosiveTraceDetector;
 import dhbw.scanner.system.ManualPostControl;
 import dhbw.scanner.utils.Utils;
 

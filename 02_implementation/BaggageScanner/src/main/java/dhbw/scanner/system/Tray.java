@@ -1,6 +1,6 @@
 package dhbw.scanner.system;
 
-import dhbw.scanner.passengers.HandBaggage;
+import dhbw.scanner.baggage.HandBaggage;
 
 public class Tray {
 

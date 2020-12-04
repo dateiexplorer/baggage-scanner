@@ -1,5 +1,6 @@
-package dhbw.scanner.passengers;
+package dhbw.scanner;
 
+import dhbw.scanner.baggage.HandBaggage;
 import dhbw.scanner.system.BaggageScanner;
 import dhbw.scanner.system.Tray;
 

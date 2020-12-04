@@ -1,7 +1,5 @@
 package dhbw.scanner.police;
 
-import dhbw.scanner.employees.FederalPoliceOfficer;
-
 import java.util.ArrayList;
 
 public class FederalPoliceOffice {

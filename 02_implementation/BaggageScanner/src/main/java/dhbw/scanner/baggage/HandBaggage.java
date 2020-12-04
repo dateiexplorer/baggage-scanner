@@ -1,6 +1,7 @@
-package dhbw.scanner.passengers;
+package dhbw.scanner.baggage;
 
 import dhbw.scanner.Configuration;
+import dhbw.scanner.Passenger;
 import dhbw.scanner.utils.FileUtils;
 
 public class HandBaggage {

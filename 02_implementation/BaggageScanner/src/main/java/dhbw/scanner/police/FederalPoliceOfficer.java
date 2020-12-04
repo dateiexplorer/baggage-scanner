@@ -1,13 +1,13 @@
-package dhbw.scanner.employees;
+package dhbw.scanner.police;
 
 
-import dhbw.scanner.ProhibitedItem;
+import dhbw.scanner.baggage.ProhibitedItem;
 import dhbw.scanner.authentication.IDCardBuilder;
 import dhbw.scanner.authentication.IDCardType;
 import dhbw.scanner.authentication.ProfileType;
-import dhbw.scanner.passengers.HandBaggage;
-import dhbw.scanner.passengers.Passenger;
-import dhbw.scanner.police.FederalPoliceOffice;
+import dhbw.scanner.employees.Employee;
+import dhbw.scanner.baggage.HandBaggage;
+import dhbw.scanner.Passenger;
 import dhbw.scanner.records.Record;
 import dhbw.scanner.utils.Utils;
 

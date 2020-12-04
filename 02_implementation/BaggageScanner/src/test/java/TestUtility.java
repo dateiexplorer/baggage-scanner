@@ -1,16 +1,10 @@
-import dhbw.scanner.ProhibitedItem;
+import dhbw.scanner.baggage.ProhibitedItem;
 import dhbw.scanner.Simulation;
-import dhbw.scanner.employees.FederalPoliceOfficer;
-import dhbw.scanner.passengers.HandBaggage;
-import dhbw.scanner.passengers.Passenger;
-import dhbw.scanner.police.Robot;
+import dhbw.scanner.baggage.HandBaggage;
+import dhbw.scanner.Passenger;
 import dhbw.scanner.records.Record;
 import dhbw.scanner.records.RecordResultType;
-import dhbw.scanner.system.BaggageScanner;
-import dhbw.scanner.system.State;
-import dhbw.scanner.system.Tray;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class TestUtility {

@@ -1,9 +1,10 @@
 package dhbw.scanner;
 
+import dhbw.scanner.baggage.ProhibitedItem;
 import dhbw.scanner.employees.*;
-import dhbw.scanner.passengers.HandBaggage;
-import dhbw.scanner.passengers.Passenger;
+import dhbw.scanner.baggage.HandBaggage;
 import dhbw.scanner.police.FederalPoliceOffice;
+import dhbw.scanner.police.FederalPoliceOfficer;
 import dhbw.scanner.police.Robot;
 import dhbw.scanner.records.Record;
 import dhbw.scanner.records.RecordResultType;
