@@ -5,7 +5,7 @@
 *.ipr
 
 # Gradle specific stuff
-*.gradle
+**/.gradle/
 **/build/
 
 # Avoid ignoring Gradle wrapper jar file
