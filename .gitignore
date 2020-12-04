@@ -1,0 +1,42 @@
+# IntelliJ - User specific stuff
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# CMake
+cmake-build-*/
+
+# Gradle specific stuff
+
+.gradle
+build/
+
+grade-app.setting
+
+# Avoid ignoring Gradle wrapper jar file
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+**/build/
+
+# IntelliJ
+out/
+
+# Java specific stuff
+*.class
+
+# Logfile
+*.log
+
+# Package files
+*.jar
+*.zip
+*.tar.gz
+*.rar
+
+# Application specific stuff
+**/src/main/resources/handBaggage/
