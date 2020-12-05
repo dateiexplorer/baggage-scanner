@@ -1,3 +1,8 @@
+# Wichtiger Hinweis zum Testen
+Dass die Tests erfolgreich ausgeführt werden können, kann es möglich sein, dass zunächst die Daten für die Gepäckstücke generiert
+werden müssen.
+Die Daten können mit Hilfe der DataGenerator-Klasse generiert werden, indem deren Main-Methode ausgeführt wird.
+
 # Liste von Annahmen, die für die Simulation getroffen wurden
 
 * Das Starten und Herunterfahren des Gepäckscanners ist nur dem Supervisor erlaubt.
