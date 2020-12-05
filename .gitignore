@@ -27,6 +27,7 @@
 *.zip
 *.tar.gz
 *.rar
+*.7z
 
 # VisualParadigm specific stuff
 **/*.bak_*
